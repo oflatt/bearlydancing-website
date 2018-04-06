@@ -1,0 +1,21 @@
+@font-face {
+    font-family: orange-kid;
+    src: url(orangekidregular.ttf);
+}
+
+body{
+    font-family: orange-kid;
+    color:white;
+    font-weight:normal;
+}
+
+h1{
+    font-weight:normal;
+}
+
+button{
+    font-family: orange-kid;
+    color:white;
+    font-weight:normal;
+    font-size:20px;
+}
