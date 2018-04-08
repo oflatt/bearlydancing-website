@@ -1,8 +1,15 @@
 var oldWindowWidth = null;
 var oldWindowHeight = null;
+var pixel = 10;
 
 function randInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
+}
+
+var brightcolor = randInt(3);
+var variedcolor = randInt(2);
+if(brightcolor == variedcolor){
+    variedcolor = 2;
 }
 
 function loadedHTML(){
@@ -34,22 +41,35 @@ function resizeBackground(){
     oldWindowHeight = window.outerHeight;
 }
 
-function onKey(){
+function fillpixel(xpos, ypos){
+    var rgb = [0,0,0];
+    rgb[brightcolor] = 255;
+    var xfactor = Math.round((Math.abs((xpos+pixel/2)-(window.outerWidth/2))/(window.outerWidth/2)) * (255/2));
+    var yfactor = Math.round((Math.abs((ypos+pixel/2)-(window.outerHeight/2))/(window.outerHeight/2)) * (255/2));
+    rgb[variedcolor] = xfactor + yfactor;
+    
     var c=document.getElementById("background");
     var ctx=c.getContext("2d");
-    ctx.fillStyle="rgb(255,255,255)";
-    var pixel = 10;
-    ctx.fillRect(randInt(window.outerWidth/pixel)*pixel,randInt(window.outerHeight/pixel)*pixel,pixel,pixel);
+    ctx.fillStyle="rgb("+rgb[0].toString()+","+rgb[1].toString()+","+rgb[2].toString()+")";
+    ctx.fillRect(xpos, ypos, pixel, pixel);
+}
+
+function onKey(){
+    fillpixel(randInt(window.outerWidth/pixel)*pixel,randInt(window.outerHeight/pixel)*pixel);
 }
 
 window.onkeydown = onKey;
 
 function onClick(event) {
-    var c=document.getElementById("background");
-    var ctx=c.getContext("2d");
-    ctx.fillStyle="rgb(255,255,255)";
-    var pixel = 10;
     var x = Math.floor(event.clientX/pixel)*pixel;
     var y = Math.floor(event.clientY/pixel)*pixel;
-    ctx.fillRect(x, y,pixel,pixel);
+    fillpixel(x,y);
+}
+
+function changeToGrey(obj){
+    obj.style.backgroundColor = "rgb(20,20,20)";
+}
+
+function changeToBlack(obj){
+    obj.style.backgroundColor = "rgb(0,0,0)";
 }

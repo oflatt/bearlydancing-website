@@ -31,6 +31,8 @@
          (@
           (id "download-button")
           (style "height:60px;width:270px;background-color:black;outline-color:white")
+          (onmouseover "changeToGrey(this)")
+          (onmouseleave "changeToBlack(this)")
           (onclick "window.location.href='https://github.com/oflatt/bearlydancing/raw/master/src/pics/honeyback0.png'"))
          "test button")))))))
  index-file-port)
