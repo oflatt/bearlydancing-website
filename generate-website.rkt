@@ -14,7 +14,8 @@
     (body
      (@ (onload "loadedHTML()")
         (onresize "resizeBackground()")
-        (onclick "onClick(event)"))
+        (onclick "onClick(event)")
+        (style "background-color:black"))
      (canvas
       (@ (id "background")
          (style "position:fixed; top:0;left:0")
