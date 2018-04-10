@@ -25,7 +25,7 @@ function changeButton() {
 	button.setAttribute('onclick', "window.location.href='https://github.com/oflatt/bearlydancing/raw/master/src/pics/honeyback1.png'");
 	button.innerHTML = "Download (Mac)";
     } else {
-	button.setAttribute('onclick', "window.location.href='https://github.com/oflatt/bearlydancing/raw/master/src/pics/honeyback3.png'");
+	button.setAttribute('onclick', "window.location.href='https://drive.google.com/uc?export=download&id=1Z7TKcn8jId2gVIUPGoMhPVTuNyVQsJw3'");
 	button.innerHTML = "Download (Windows)";
     }
 }
