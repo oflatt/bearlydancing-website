@@ -6,7 +6,7 @@
 (write-html
  `((html
     (head
-     (title "bearly dancing- demo")
+     (title "bearly dancing")
      (script (@ (src "mainscript.js")))
      (link (@ (rel "stylesheet")
               (type "text/css")
@@ -27,7 +27,7 @@
           (style "display: inline-block;position:relative"))
        (center
         (h1
-         "bearly dancing")
+         "bearly dancing- demo")
         (div
          (@ (style "margin-bottom:20"))
          (iframe
@@ -60,6 +60,8 @@
          (h1 (@ (style "margin-bottom:10")) "Is the art and music the game original?")
          (h1 "-Yes. I composed the music for the game, and my sister Sophia did much of the pixel art.")
          (h1)
+         (h1 (@ (style "margin-bottom:10")) "When is the full game going to be on Steam?")
+         (h1 "-Hopefully, in about the summer of 2019")
          (center
           (h1 "a game by Oliver Flatt- contact and report bugs at oflatt@gmail.com")))))))))
  index-file-port)
