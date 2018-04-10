@@ -57,6 +57,8 @@
          (h1 "-On Windows, just double click the executable and hit 'run' in the popup menu. On Mac, right click the application and hit 'open'. Then you can hit a drop-down menu and choose run anyways from there.")
          (h1 (@ (style "margin-bottom:10")) "The download is getting stuck or getting erased. What do I do?")
          (h1 "-This is typically a problem on Windows. Because I am an 'unidentified developer', windows does not trust the game. First, try hitting the drop down menu on the downloaded file in your browser and look for 'download anyways' or 'keep' button. Second, if the file is getting erased by Windows Defender and you get a little notification, then you will have to disable Windows Defender in order to play it. (Windows Defender is like airport security- it's annoying and doesn't stop much.)")
+         (h1 (@ (style "margin-bottom:10")) "Is the art and music the game original?")
+         (h1 "-Yes. I composed the music for the game, and my sister Sophia did much of the pixel art.")
          (h1)
          (center
           (h1 "a game by Oliver Flatt- contact and report bugs at oflatt@gmail.com")))))))))
