@@ -17,15 +17,26 @@ function loadedHTML(){
     resizeBackground();
 }
 
+var windowsdownload = "https://www.dropbox.com/s/438zixtpv3lo5ta/bearly%20dancing%20demo%20windows.zip?dl=1"
+var macdownload = "https://www.dropbox.com/s/t9lmm04w1fprmsz/bearly%20dancing%20demo%20mac.zip?dl=1"
+var altwindowsdownload = "https://drive.google.com/uc?export=download&id=1Qa63C8hCYqrFE5oXy7S0TgsHzots-xF3"
+var altmacdownload = "https://drive.google.com/uc?export=download&id=1u51RW-FxJ7hq0aAaeAhs0VaJhFZf00RM"
+
 function changeButton() {
+    var macdownloadlink = document.getElementById('macdownload');
+    macdownloadlink.setAttribute('href', altmacdownload);
+
+    var windowsdownloadlink = document.getElementById('windowsdownload');
+    windowsdownloadlink.setAttribute('href', altwindowsdownload);
+
     var button = document.getElementById('download-button');
     // by default set it to the windows link
     // otherwise set it to the mac link
     if (navigator.appVersion.indexOf("Mac")!=-1) {
-	button.setAttribute('onclick', "window.location.href='https://github.com/oflatt/bearlydancing/raw/master/src/pics/honeyback1.png'");
+	button.setAttribute('onclick', "window.location.href='" + macdownload + "'");
 	button.innerHTML = "Download (Mac)";
     } else {
-	button.setAttribute('onclick', "window.location.href='https://drive.google.com/uc?export=download&id=1Z7TKcn8jId2gVIUPGoMhPVTuNyVQsJw3'");
+	button.setAttribute('onclick', "window.location.href='" + windowsdownload + "'");
 	button.innerHTML = "Download (Windows)";
     }
 }

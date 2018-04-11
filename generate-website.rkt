@@ -35,7 +35,7 @@
              (height "540")
              (frameborder "0")
              (allowfullscreen)
-             (src "https://www.youtube.com/embed/g6SlOlGsGdE?rel=0&autoplay=1&mute=1&amp&loop=1&playlist=g6SlOlGsGdE;showinfo=0&amp"))))
+             (src "https://www.youtube.com/embed/g6SlOlGsGdE?rel=0&autoplay=1&mute=1&amp&loop=1&controls=0&playlist=g6SlOlGsGdE;showinfo=0&amp"))))
         (button
          (@
           (id "download-button")
@@ -43,7 +43,7 @@
           (onmouseover "changeToGrey(this)")
           (onmouseleave "changeToBlack(this)")
           (onclick "window.location.href='https://github.com/oflatt/bearlydancing/raw/master/src/pics/honeyback0.png'"))
-         "Download")
+         "Please wait...")
         (div
          (@ (width "950")
             (style  "text-indent:2px;width:920;overflow:auto;text-align:justify"))
@@ -62,6 +62,15 @@
          (h1)
          (h1 (@ (style "margin-bottom:10")) "When is the full game going to be on Steam?")
          (h1 "-Hopefully, in about the summer of 2019")
+         (h1 (@ (style "margin-bottom:10")) "What if I want alternate download links?")
+         (h1
+          (a (@ (href "linktobereplaced")
+                (id "macdownload"))
+             "Mac alternate download"))
+         (h1
+          (a (@ (href "linktobereplaced")
+                (id "windowsdownload"))
+             "Windows alternate download"))
          (center
           (h1 "a game by Oliver Flatt- contact and report bugs at oflatt@gmail.com")))))))))
  index-file-port)
