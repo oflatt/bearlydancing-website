@@ -81,6 +81,7 @@
                 (id "windowsdownload"))
              "Windows alternate download"))
          (center
+          (img (@ (src "https://github.com/oflatt/portfolio-gifs/raw/master/beardance.gif")))
           (h1 "a game by Oliver Flatt- contact and report bugs at oflatt@gmail.com")))))))))
  index-file-port)
 
