@@ -35,7 +35,7 @@
        (@ (z-score "1")
           (style "display: inline-block;position:relative"))
        (center
-        (h1
+        (h2
          "bearly dancing- demo")
         (div
          (@ (style "margin-bottom:20"))
@@ -55,13 +55,13 @@
          "Please wait...")
         (div
          (@ (width "950")
-            (style  "text-indent:2px;width:920;overflow:auto;text-align:justify"))
+            (style  "width:950;overflow:auto;text-align:justify"))
          (h2
           "Thank you for visiting! Please send feedback and bug reports to oflatt@gmail.com so that I can make the game better. If you cannot get the game to run, please read the section below to fix the problem, or contact me if it doesn't.")
          (center
-          (h1 "Troubleshooting"))
+          (h2 "Troubleshooting"))
          (faq "The download is getting stuck or is getting erased. What do I do?")
-         (h1 "-First, try hitting the drop down menu on the downloaded file in your browser and look for a 'download anyways' or 'keep' button and hit it. Second, if the file is getting erased by Windows Defender (you might get a little notification), then you will have to disable Windows Defender in order to play it. (Windows Defender is like airport security- it's annoying and doesn't stop much.)")
+         (h1 "-First, try hitting the drop down menu on the downloaded file in your browser and look for a 'download anyways' or 'keep' button and hit it. Second, if the file is getting erased by Windows Defender, then you will have to disable Windows Defender in settings in order to play it. It will really try to stop you from disabling it, but it's okay. (Windows Defender is like airport security- it's annoying and doesn't stop much.)")
          (faq "I downloaded... what now?")
          (h1 "-After downloading, extract the files. On Mac simply double click the downloaded file, and on Windows drag the folder out after double clicking. Then double click the bearly dancing executable in the newly created folder. On Windows, note that the game relies on all the files in the folder, so do not remove it. On Mac, the bear doesn't like to stay in the same folder, so on newer versions of the OS you will have to move the .app file out of the folder before running it. (This is because of sandboxing, the OS not trusting it again.)")
          (faq "The game won't run because it is not trusted. What do I do?")
@@ -75,7 +75,7 @@
          
          
          (center
-          (h1 "FAQ"))
+          (h2 "FAQ"))
          (faq "Is the art and music the game original?")
          (h1 "-Yes. I composed the music for the game, and my sister Sophia did much of the pixel art.")
          (h1)
@@ -85,6 +85,11 @@
          (h1 (span "Absolutely! bearly dancing is open source. You can visit ")
              (span (a (@ (href "https://github.com/oflatt/bearlydancing")) "https://github.com/oflatt/bearlydancing"))
              (span " to get the it. I encourage messing around with it. Just don't sell it, it has a license on it."))
+         (faq "Why the dots in the background?")
+         (h1 (span "Just for fun. If you want something more interesting, check out ")
+             (span (a (@ (href "http://oflatt.com/predetermined.html")) "http://oflatt.com/predetermined.html"))
+             (span "."))
+        
          (faq "What if I want alternate download links?")
          (h1
           (a (@ (href "linktobereplaced")
@@ -94,6 +99,7 @@
           (a (@ (href "linktobereplaced")
                 (id "windowsdownload"))
              "Windows alternate download"))
+         
          (center
           (img (@ (src "https://github.com/oflatt/portfolio-gifs/raw/master/beardance.gif")))
           (h1 "a game by Oliver Flatt- contact and report bugs at oflatt@gmail.com")))))))))
