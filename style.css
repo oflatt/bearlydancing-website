@@ -11,6 +11,18 @@ body{
 
 h1{
     font-weight:normal;
+    font-size:1.5em;
+}
+
+h2{
+    font-weight:normal;
+    font-size:2em;
+}
+
+faq{
+    font-weight:normal;
+    font-size:1.5em;
+    margin-bottom:10;
 }
 
 button{

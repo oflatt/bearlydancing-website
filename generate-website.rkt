@@ -56,22 +56,36 @@
         (div
          (@ (width "950")
             (style  "text-indent:2px;width:920;overflow:auto;text-align:justify"))
-         (h1
-          "Please send feedback to oflatt@gmail.com so that I can make the game better.")
+         (h2
+          "Thank you for visiting! Please send feedback and bug reports to oflatt@gmail.com so that I can make the game better. If you cannot get the game to run, please read the section below to fix the problem, or contact me if it doesn't.")
+         (center
+          (h1 "Troubleshooting"))
+         (faq "The download is getting stuck or is getting erased. What do I do?")
+         (h1 "-First, try hitting the drop down menu on the downloaded file in your browser and look for a 'download anyways' or 'keep' button and hit it. Second, if the file is getting erased by Windows Defender (you might get a little notification), then you will have to disable Windows Defender in order to play it. (Windows Defender is like airport security- it's annoying and doesn't stop much.)")
+         (faq "I downloaded... what now?")
+         (h1 "-After downloading, extract the files. On Mac simply double click the downloaded file, and on Windows drag the folder out after double clicking. Then double click the bearly dancing executable in the newly created folder. On Windows, note that the game relies on all the files in the folder, so do not remove it. On Mac, the bear doesn't like to stay in the same folder, so on newer versions of the OS you will have to move the .app file out of the folder before running it. (This is because of sandboxing, the OS not trusting it again.)")
+         (faq "The game won't run because it is not trusted. What do I do?")
+         (h1 "-On Windows, double click the executable and hit 'run' in the popup menu. On Mac, right click the application and click 'open'. The menu will then allow you to open anyways. If that does not work, going security settings and allowing it to run.")
+         (faq "I am on a Mac and the game crashes upon opening. What do I do?")
+         (h1 "-Try moving the game file (the .app) out of the folder. This problem comes up with newer versions of Mac that sandbox the game. You can move it back into the folder after, you just have to move it to tell the OS that you trust it. If this doesn't work, please contact me.")
+         (faq "Windowed mode isn't working well and command tab does not work on the Mac. What do I do?")
+         (h1 "Sorry, nothing for now. I'm working on those. Fullscreen mode should work and you can save and exit the game at literally any time during the game using the escape key.")
+         (faq "The game is too difficult and I can't win. What do I do?")
+         (h1 "Git good or grind. Just kidding, just tell me about it. This game isn't balanced very well as of yet, and I appreciate the input. I can hack you up something good, or you can do it yourself!")
+         
+         
          (center
           (h1 "FAQ"))
-         (h1 (@ (style "margin-bottom:10")) "How do I run the game?")
-         (h1 "-After downloading, un-zip the files. Run the bearly dancing executable in the folder. Note that it relies on all the files in the folder, so do not remove it from the folder.")
-         (h1 (@ (style "margin-bottom: 10")) "The game won't run because it is not trusted. What do I do?")
-         (h1 "-On Windows, double click the executable and hit 'run' in the popup menu. On Mac, right click the application and hit 'open'. Then you can hit a drop-down menu and choose run anyways from there. If that does not work, you may have to go to security settings and allow it to run.")
-         (h1 (@ (style "margin-bottom:10")) "The download is getting stuck or getting erased. What do I do?")
-         (h1 "-This is typically a problem on Windows. Because bearly dancing is from an 'unidentified developer', Windows does not trust the game. First, try hitting the drop down menu on the downloaded file in your browser and look for 'download anyways' or 'keep' button. Second, if the file is getting erased by Windows Defender and you get a little notification, then you will have to disable Windows Defender in order to play it. (Windows Defender is like airport security- it's annoying and doesn't stop much.)")
-         (h1 (@ (style "margin-bottom:10")) "Is the art and music the game original?")
+         (faq "Is the art and music the game original?")
          (h1 "-Yes. I composed the music for the game, and my sister Sophia did much of the pixel art.")
          (h1)
-         (h1 (@ (style "margin-bottom:10")) "When is the full game going to be on Steam?")
+         (faq "When is the full game going to be on Steam?")
          (h1 "-Hopefully, in about the summer of 2019")
-         (h1 (@ (style "margin-bottom:10")) "What if I want alternate download links?")
+         (faq "Can I have the source code?")
+         (h1 (span "Absolutely! bearly dancing is open source. You can visit ")
+             (span (a (@ (href "https://github.com/oflatt/bearlydancing")) "https://github.com/oflatt/bearlydancing"))
+             (span " to get the it. I encourage messing around with it. Just don't sell it, it has a license on it."))
+         (faq "What if I want alternate download links?")
          (h1
           (a (@ (href "linktobereplaced")
                 (id "macdownload"))
