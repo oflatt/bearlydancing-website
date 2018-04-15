@@ -89,6 +89,8 @@
          (h1 (span "Just for fun. If you want something more interesting, check out ")
              (span (a (@ (href "http://oflatt.com/predetermined.html")) "http://oflatt.com/predetermined.html"))
              (span "."))
+         (faq "How do I time a perfect note in game?")
+         (h1 "Have a background in classical music. Just kidding, mostly. Listen to the beat and time the both the press and release. The bars will overlap at the correct time. Unlike many other rhythm games, this one tests your ability to hold the note to the correct duration.")
         
          (faq "What if I want alternate download links?")
          (h1
