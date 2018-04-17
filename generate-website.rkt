@@ -61,7 +61,7 @@
          (center
           (h2 "Troubleshooting"))
          (faq "The download is getting stuck or is getting erased. What do I do?")
-         (h1 "-First, try hitting the drop down menu on the downloaded file in your browser and look for a 'download anyways' or 'keep' button and hit it. Second, if the file is getting erased by Windows Defender, then you will have to disable Windows Defender in settings in order to play it. It will really try to stop you from disabling it, but it's okay. (Windows Defender is like airport security- it's annoying and doesn't stop much.)")
+         (h1 "-First, try hitting the drop down menu on the downloaded file in your browser and look for a 'download anyways' or 'keep' button and hit it. Second, if the file is getting erased by Windows Defender, then you will have to disable Windows Defender in settings in order to play it. It will really try to stop you from disabling it, but it's okay. (Windows Defender is like airport security- it's annoying and doesn't stop much.) If you are getting a download error, try the alternate download links below.")
          (faq "I downloaded... what now?")
          (h1 "-After downloading, extract the files. On Mac simply double click the downloaded file, and on Windows drag the folder out after double clicking. Then double click the bearly dancing executable in the newly created folder. On Windows, note that the game relies on all the files in the folder, so do not remove it. On Mac, the bear doesn't like to stay in the same folder, so on newer versions of the OS you will have to move the .app file out of the folder before running it. (This is because of sandboxing, the OS not trusting it again.)")
          (faq "The game won't run because it is not trusted. What do I do?")
@@ -96,11 +96,11 @@
          (h1
           (a (@ (href "linktobereplaced")
                 (id "macdownload"))
-             "Mac alternate download"))
+             "Mac alternate download on Google Drive"))
          (h1
           (a (@ (href "linktobereplaced")
                 (id "windowsdownload"))
-             "Windows alternate download"))
+             "Windows alternate download on Google Drive"))
          
          (center
           (img (@ (src "https://github.com/oflatt/portfolio-gifs/raw/master/beardance.gif")))
