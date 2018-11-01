@@ -17,8 +17,13 @@ function loadedHTML(){
     resizeBackground();
 }
 
-var windowsdownload = "https://www.dropbox.com/s/438zixtpv3lo5ta/bearly%20dancing%20demo%20windows.zip?dl=1"
-var macdownload = "https://www.dropbox.com/s/t9lmm04w1fprmsz/bearly%20dancing%20demo%20mac.zip?dl=1"
+
+var windowsdownload = "https://github.com/oflatt/bearlydancing/releases/download/v0.0-demo/bearly.dancing.demo.windows.zip"
+var macdownload = "https://github.com/oflatt/bearlydancing/releases/download/v0.0-demo/bearly.dancing.demo.mac.zip"
+
+var windowsdownloaddropbox = "https://www.dropbox.com/s/438zixtpv3lo5ta/bearly%20dancing%20demo%20windows.zip?dl=1"
+var macdownloaddropbox = "https://www.dropbox.com/s/t9lmm04w1fprmsz/bearly%20dancing%20demo%20mac.zip?dl=1"
+
 var altwindowsdownload = "https://drive.google.com/uc?export=download&id=1Qa63C8hCYqrFE5oXy7S0TgsHzots-xF3"
 var altmacdownload = "https://drive.google.com/uc?export=download&id=1u51RW-FxJ7hq0aAaeAhs0VaJhFZf00RM"
 
