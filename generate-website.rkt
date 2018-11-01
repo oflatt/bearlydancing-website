@@ -57,7 +57,14 @@
          (@ (width "950")
             (style  "width:950;overflow:auto;text-align:justify"))
          (h2
-          "Thank you for visiting! Please send feedback and bug reports to oflatt@gmail.com so that I can make the game better. If you cannot get the game to run, please read the section below to fix the problem, or contact me if it doesn't.")
+          (a (@ (href "https://docs.google.com/forms/d/e/1FAIpQLSfQqZbIr7KjGFMsNwDsCFN-dDfPBB6rQoMJd3Iw8X04z55whw/viewform?usp=sf_link"))
+             "Get notified when the game is released! Click here to add your email to the list."))
+         (h2 "Follow progress of the game on Twitter:")
+         (center
+         ,(html->xexp "<a href='https://twitter.com/oflatt?ref_src=twsrc%5Etfw' class='twitter-follow-button' data-size='large' data-show-count='false'>Follow @oflatt</a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>"))
+         (h2 " ")
+         (h2
+          "Thank you for visiting! If you cannot get the game to run, please read the section below to fix the problem, or contact me if it doesn't.")
          (center
           (h2 "Troubleshooting"))
          (faq "The download is getting stuck or is getting erased. What do I do?")
